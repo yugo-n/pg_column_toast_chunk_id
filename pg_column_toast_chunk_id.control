@@ -1,0 +1,5 @@
+# pg_column_toast_chunk_id extension
+comment = 'get chunk id of a TOASTed column'
+default_version = '1.0'
+module_pathname = '$libdir/pg_column_toast_chunk_id'
+relocatable = true
