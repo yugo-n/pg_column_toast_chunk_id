@@ -45,3 +45,21 @@ postgres=# select chunk_id, chunk_seq from pg_toast.pg_toast_16388;
     16393 |        32
 (33 rows)
 ```
+
+## Installation
+
+To install `pg_column_toast_chunk_id`, execute this in the module's directory:
+
+```shell
+make install
+```
+
+If you installed PostgreSQL from rpm or deb, you will need the devel package (for example, postgresql14-devel or postgresql-server-dev-14).
+
+> **Important:** Don't forget to set the `PG_CONFIG` variable (`make PG_CONFIG=...`) or the `PATH` to the `pg_config` command in case you want to use `pg_column_toast_chunk_id` on a non-default or custom build of PostgreSQL. Read more [here](https://wiki.postgresql.org/wiki/Building_and_Installing_PostgreSQL_Extension_Modules).
+
+And, execute CREATE EXTENSION comand.
+
+```
+CREATE EXTENSION pg_column_toast_chunk_id;
+```
